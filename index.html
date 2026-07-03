@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mclaren</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicooon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#aside">About</a>
+            <a href="">Gallery</a>
+            <a href="">Code</a>
+        </nav>
+    <article id="article">
+        <h1 style="position: absolute; top: 35%; left: 50%; transform: translate(-50%, -170%); z-index: 1;">MCLAREN</h1>
+        <h2 style="position: absolute; top: 42%; left: 50%; transform: translate(-50%, -260%); z-index: 1;">Racing</h2>
+        <img src="car%20top%20view.png" id="car">
+    </article>
+    </header>
+        <div class="split-container">
+            <article id="leftarticle">
+                <section>
+                    <div class="slideshow-container">
+                      <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="hero%20image.jpg" style="width:100%">
+                        <div class="text">Lando Norris Driving</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images.jpeg" style="width:100%">
+                        <div class="text">Lando and Oscar Together</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images%20(1).jpeg" style="width:100%">
+                        <div class="text">The Team After Winning The 2024 WCC</div>
+                      </div>
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </section>
+            </article>
+            <aside id="aside">
+                <section>
+                    <h2>Mclaren Racing - Changing the Game</h2>
+                    <p>After our first taste of victory in F1 at the 1968 Belgian Grand Prix, McLaren has gone on to secure 203 Grand Prix wins, winning 13 Drivers' World Championships and 10 Constructors' World Championships. Whether it’s the F1 drivers on track, mechanics in the garage, the team on the pit wall, or engineers in the MTC, we are united by bravery, ingenuity, and the thrill of the chase.</p>
+                    <p>McLaren’s history books are full of fightbacks and recoveries, but few could claim to be as impressive or exhilarating as the team’s most recent. A historic 10th Constructors’ World Championship was sealed under the lights in Singapore, less than three years after the team started the 2023 season at the back of the field at their second home race Bahrain.</p>
+                </section>
+            </aside>
+        </div>
+    
+        <main>
+            <div id="header" class="garage">
+              <div class="kicker">Est. 1963 — Woking, England</div>
+              <h1>Six Decades <em>on Track</em></h1>
+              <p>From a garage in New Zealand to the front of the grid — the moments that built a papaya legacy.</p>
+            </div>
+
+            <div class="circuitShell">
+              <div class="raceLine"><div class="fill" id="raceFill"></div></div>
+
+              <div id="waypoints"></div>
+            </div>
+          </main>
+    
+    
+    <div id="drivers">
+        <article id="driversarticle">
+            <img src="lando.png">
+            <button><a href="https://landonorris.com/">LANDO NORRIS</a></button>
+        </article>
+        <aside id="driversaside">
+            <img src="oscar.png">
+            <button><a href="https://www.oscarpiastri.com/">OSCAR PIASTRI</a></button>
+        </aside>
+    </div>
+    
+    <footer class="mclaren-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <span class="logo-text">mclaren<span class="orange-dot">.</span></span>
+      <p>Fearlessly forward. Built for speed, engineered for excellence.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Racing</h4>
+      <ul>
+        <li><a href="#formula1">Formula 1</a></li>
+        <li><a href="#indycar">IndyCar</a></li>
+        <li><a href="#extreme-e">Extreme E</a></li>
+        <li><a href="#esports">Shadow Esports</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#automotive">Automotive</a></li>
+        <li><a href="#racing">McLaren Racing</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#shop">Official Shop</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Join the Team</h4>
+      <p>Receive the latest updates straight from the paddock.</p>
+      <form class="subscribe-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 McLaren Fan Tribute. Built for the fans.</p>
+    <div class="bottom-links">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+   
+    <script src="script.js"></script>
+</body>
+</html>
