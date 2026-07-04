@@ -1,4 +1,4 @@
-:root{
+:root{ /*Colours for the entire file*/
     --carbon: #242424;
     --carbon-panel: #17171a;
     --papaya: #FFA500;
@@ -17,11 +17,11 @@
 body {
   margin: 0;
   padding: 0;
-  cursor: url(img/Cursor.png), auto;
+  cursor: url(img/Cursor.png), auto;/*custom cursur image of the mclaren logo*/
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;/*smoothly scroll once the nav items have been clicked*/
 }
 
 #article {
@@ -29,6 +29,7 @@ html {
   background-color: var(--papaya);
   height: 100vh;
 }
+
 
 h1 {
   font-family: 'Trebuchet MS', sans-serif; font-weight: bold; 
@@ -40,9 +41,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Trebuchet MS', sans-serif; font-weight: bold;
-  letter-spacing: -1px;
-  font-size: 300%;
+    font-family: 'Trebuchet MS', sans-serif; font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 300%;
   text-shadow: 2px 2px #9a9a9a;
 }
 
@@ -61,32 +62,32 @@ h2 {
 
 @keyframes moveCar {
   to {
-    top: 40%;
+    top: 40%;/*car paralax animation*/
   }
 }
 
-nav {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  padding: 15px 40px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  animation: showNav linear both;
-  animation-timeline: scroll(root);
-  animation-range: entry 0% exit 20%;
-}
+  nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: showNav linear both;
+    animation-timeline: scroll(root);
+    animation-range: entry 0% exit 20%;
+  }
 
-@keyframes showNav {
+@keyframes showNav {/*the nav appears once scrolled*/
   from {
     opacity: 0;
     transform: translate(-50%, -20px);
@@ -99,14 +100,15 @@ nav {
   }
 }
 
+
 nav a {
   text-decoration: none;
   color: white;
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -145,14 +147,15 @@ nav::after {
 }
 
 #aside {
-  width: 50%;
-  padding: 60px;
-  box-sizing: border-box;
-  text-align: right;
-  background-color: var(--papaya);
+    width: 50%;
+    padding: 60px;
+    box-sizing: border-box;
+    text-align: right;
+    background-color: var(--papaya);
   margin: 30px;
   border-radius: 10px
 }
+
 
 #aside h2 {
   font-family: 'Trebuchet MS', sans-serif; 
@@ -176,7 +179,7 @@ nav::after {
   margin: auto;
 }
 
-.mySlides {
+.mySlides {/*the image carocell*/
   display: none;
 }
 
@@ -222,14 +225,15 @@ nav::after {
   top: 0;
 }
 
+
 .dot {
   cursor: pointer;
   height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
   transition: background-color 0.6s ease;
 }
 
@@ -238,8 +242,8 @@ nav::after {
 }
 
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
@@ -283,12 +287,12 @@ main {
     border-bottom: 1px solid var(--hairline);
   }
 
-  .garage::before{
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, var(--papaya) 0%, var(--papaya) 60%, transparent 60%, transparent 70%, var(--papaya) 70%, var(--papaya) 78%, transparent 78%);
-  }
+    .garage::before{/*to load the timeline items in a cool fade*/
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, var(--papaya) 0%, var(--papaya) 60%, transparent 60%, transparent 70%, var(--papaya) 70%, var(--papaya) 78%, transparent 78%);
+    }
 
   .kicker{
     font-family: 'Space Mono', monospace;
@@ -338,7 +342,7 @@ main {
     background: var(--hairline);
   }
 
-  @media (min-width: 860px){
+  @media (min-width: 860px){/*to try to make the website look good on other sized devices*/
     .raceLine{ left: 50%; transform: translateX(-1px); }
   }
 
@@ -443,7 +447,7 @@ main {
   }
 
 #drivers {
-  display: flex;
+  display: flex;/*so that the image will be centred*/
   margin-top: 50px;
 }
 
@@ -579,9 +583,9 @@ main {
 }
 
 .footer-links ul li a {
-  color: #888888;
-  text-decoration: none;
-  font-size: 14px;
+    color: #888888;
+    text-decoration: none;
+    font-size: 14px;
   transition: color 0.2s ease;
 }
 
@@ -610,34 +614,34 @@ main {
   display: flex;
 }
 
-.subscribe-form input {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  color: #ffffff;
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 4px 0 0 4px;
-  outline: none;
-  flex: 1;
-  transition: border-color 0.2s;
-}
+  .subscribe-form input {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    flex: 1;
+    transition: border-color 0.2s;
+  }
 
-.subscribe-form input:focus {
-  border-color: #ff8700;
-}
+  .subscribe-form input:focus {
+    border-color: #ff8700;
+  }
 
-.subscribe-form button {
-  background-color: #ff8700;
-  color: #111111;
-  border: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
+  .subscribe-form button {
+    background-color: #ff8700;
+    color: #111111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
 
 .subscribe-form button:hover {
   background-color: #e07600;
