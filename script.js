@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 1; //this few lines of code modified from w3
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -25,7 +25,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-const milestones = [
+const milestones = [ //for the timeline
     {
       year: "1963",
       lap: "LAP 01 · 1963",
@@ -98,7 +98,7 @@ const milestones = [
     }
   ];
 
-  function initTimeline(){
+  function initTimeline(){//still timeline stuff
     const wrap = document.getElementById('waypoints');
     if (!wrap) { console.error('McLaren timeline: #waypoints not found, aborting init.'); return; }
 
